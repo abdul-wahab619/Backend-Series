@@ -46,3 +46,7 @@
 1. EJS
 2. Dynamic routing
 3. Initializing project
+
+## Part - 7
+
+1. Hands-on Practice from Past Lessons
