@@ -40,3 +40,9 @@
 1. Form Handling
 2. Sessions
 3. Cookies
+
+## Part - 6
+
+1. EJS
+2. Dynamic routing
+3. Initializing project
