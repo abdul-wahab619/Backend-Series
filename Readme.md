@@ -35,18 +35,22 @@
 6. Request & Response
 7. Error handling
 
-## Part - 5
+## Part - 5:
 
 1. Form Handling
 2. Sessions
 3. Cookies
 
-## Part - 6
+## Part - 6:
 
 1. EJS
 2. Dynamic routing
 3. Initializing project
 
-## Part - 7
+## Part - 7:
 
 1. Hands-on Practice from Past Lessons
+
+## Part - 8:
+
+1. Putting Theory into Practice
