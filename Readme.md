@@ -24,3 +24,13 @@
 4. Understanding node_modules
 5. Dependencies
 6. Scripts -> Understanding default scripts PATH and Custom script
+
+## Part - 4:
+
+1. Express.js Framework
+2. Introduction to Express.js
+3. Setting up a basic Express application
+4. Routing
+5. Middleware
+6. Request & Response
+7. Error handling
