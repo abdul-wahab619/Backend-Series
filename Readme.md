@@ -15,3 +15,12 @@
 3. Working with modules
 4. File system opertions.
 5. Understanding HTTP module
+
+## Part - 3:
+
+1. NPM Understanding
+2. npm -> Node Package Manager
+3. Installing and Uninstalling anything basics & advance
+4. Understanding node_modules
+5. Dependencies
+6. Scripts -> Understanding default scripts PATH and Custom script

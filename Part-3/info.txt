@@ -1,0 +1,2 @@
+nodejs core mn jo install ho kr ata hai wo kehlata hai module
+npm se download krka jo ata wo package hota hai
