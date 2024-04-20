@@ -1,0 +1,20 @@
+{
+  "name": "part-3",
+  "version": "1.0.0",
+  "description": "Basics of Node.js.",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "backend"
+  ],
+  "author": "Abdul Wahab",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2"
+  }
+}
