@@ -1,0 +1,15 @@
+{
+  "name": "part-2",
+  "version": "1.0.0",
+  "description": "Basics of Node.js.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "backend"
+  ],
+  "author": "Abdul Wahab",
+  "license": "ISC"
+}
