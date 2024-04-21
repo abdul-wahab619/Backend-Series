@@ -54,3 +54,7 @@
 ## Part - 8:
 
 1. Putting Theory into Practice
+
+## Part - 9:
+
+1. Edit feature
