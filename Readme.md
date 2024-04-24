@@ -64,3 +64,10 @@
 1. MongoDB
 2. Mongoose
 3. Database server
+
+## Part - 11:
+
+1. MongoDb Collection
+2. Schema
+3. Model
+4. CRUD Operations

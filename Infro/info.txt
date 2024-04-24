@@ -1,0 +1,2 @@
+ORM: Object Relation Mapping
+ODM: Object Document Mapping
