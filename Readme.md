@@ -71,3 +71,10 @@
 2. Schema
 3. Model
 4. CRUD Operations
+
+## Part - 12:
+
+1. CRUD Operations
+2. with EJS
+3. Server-Side Rendering
+4. MongoDB
