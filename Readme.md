@@ -78,3 +78,4 @@
 2. with EJS
 3. Server-Side Rendering
 4. MongoDB
+5. Update Feature with EJS

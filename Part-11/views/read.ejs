@@ -26,7 +26,7 @@
             <h3 class="text-xl mt-3 tracking-tighter"><%= user.name %></h3>
             <h5 class="text-zinc-400"><%= user.email %></h5>
             <div class="flex gap-3 mt-10">
-              <a href="" class="text-blue-500">Edit User</a>
+              <a href="/edit/<%= user._id  %>" class="text-blue-500">Edit User</a>
               <a href="/delete/<%= user._id  %>" class="text-red-500"
                 >Delete User</a
               >

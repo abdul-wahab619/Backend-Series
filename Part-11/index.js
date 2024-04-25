@@ -41,13 +41,21 @@ app.get("/delete/:id", async (req, res) => {
   res.redirect("/read");
 });
 
-app.get("/update", async (req, res) => {
-  let userUp = await userModel.findOneAndUpdate(
-    { email: "24" },
-    { email: "ali@gmail.com" },
+app.get("/edit/:userId", async (req, res) => {
+  let user = await userModel.findOne({ _id: req.params.userId });
+
+  res.render("edit", { user });
+});
+
+app.post("/update/:userId", async (req, res) => {
+  let { name, email, image } = req.body;
+  let user = await userModel.findOneAndUpdate(
+    { _id: req.params.userId },
+    { name, email, image },
     { new: true }
   );
-  res.send(userUp);
+
+  res.redirect("/read");
 });
 
 app.listen(PORT, () => {
