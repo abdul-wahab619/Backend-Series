@@ -79,3 +79,10 @@
 3. Server-Side Rendering
 4. MongoDB
 5. Update Feature with EJS
+
+## Part - 14:
+
+1. Authentication
+2. Authorization
+3. Bcrypt
+4. JWT
