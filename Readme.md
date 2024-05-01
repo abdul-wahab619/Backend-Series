@@ -86,3 +86,10 @@
 2. Authorization
 3. Bcrypt
 4. JWT
+
+## Part - 15:
+
+1. Authentication
+2. Authorization
+3. JWT Token
+4. MongoDB
