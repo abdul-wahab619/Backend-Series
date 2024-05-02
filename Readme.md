@@ -99,3 +99,5 @@
 1. Mini Project 1
 2. Data Association
 3. MongoDB
+- Part - 1
+- Part - 2
