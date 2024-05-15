@@ -103,3 +103,6 @@
 - Part - 2
 - Part - 3 (Adding like and edit features)
 - Part - 4 (Use of Multer)
+
+## Project - Scatch
+1. Basic Project setup
