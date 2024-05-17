@@ -99,10 +99,18 @@
 1. Mini Project 1
 2. Data Association
 3. MongoDB
+
 - Part - 1
 - Part - 2
 - Part - 3 (Adding like and edit features)
 - Part - 4 (Use of Multer)
 
-## Project - Scatch
+## Project - Scatch:
+
+### Part - 1:
+
 1. Basic Project setup
+
+### Part - 2:
+
+2. Make models (user,product)
