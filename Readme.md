@@ -114,3 +114,9 @@
 ### Part - 2:
 
 2. Make models (user,product)
+
+### Part - 3:
+
+3. Separation of Concerns
+4. Owner Model
+5. Routes
