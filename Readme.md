@@ -120,3 +120,9 @@
 3. Separation of Concerns
 4. Owner Model
 5. Routes
+
+### Part - 4:
+
+5. development.json
+6. debug (setting evn variables)
+7. create owner and test through Postman
