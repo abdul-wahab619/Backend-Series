@@ -130,3 +130,7 @@
 ## Part - 5:
 
 8. Signup & Login
+9. /shop
+10. isLoggedIn
+11. session Expression
+12. Flash

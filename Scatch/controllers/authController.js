@@ -1,50 +1,84 @@
 const userModel = require("../models/user-model");
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 const { generateToken } = require("../utils/generateToken");
 
 module.exports.registerUser = async function (req, res) {
   try {
-    let { email, password, fullname } = req.body;
+    const { email, password, fullname } = req.body;
+
     let user = await userModel.findOne({ email: email });
-    if (user)
-      return res
-        .status(401)
-        .send("You already have an account.Please login...!");
+    if (user) {
+      req.flash("error", "You already have an account. Please login!");
+      return res.redirect("/login");
+    }
+
     bcrypt.genSalt(10, function (err, salt) {
+      if (err) {
+        req.flash("error", err.message);
+        return res.redirect("/register");
+      }
+
       bcrypt.hash(password, salt, async function (err, hash) {
-        if (err) return res.send(err.message);
-        else {
+        if (err) {
+          req.flash("error", err.message);
+          return res.redirect("/register");
+        }
+
+        try {
           let user = await userModel.create({
             email,
             password: hash,
             fullname,
           });
+
           let token = generateToken(user);
           res.cookie("token", token);
-          res.send("User Created Successfully");
+          req.flash("success", "User Created Successfully");
+          return res.redirect("/shop");
+        } catch (err) {
+          req.flash("error", err.message);
+          return res.redirect("/register");
         }
       });
     });
   } catch (err) {
-    res.send(err.message);
+    req.flash("error", err.message);
+    res.redirect("/register");
   }
 };
+
 module.exports.loginUser = async function (req, res) {
   try {
-    let { email, password } = req.body;
+    const { email, password } = req.body;
+
     let user = await userModel.findOne({ email: email });
-    if (!user) return res.status(401).send("email and password incorrect");
+    if (!user) {
+      req.flash("error", "Email and password incorrect");
+      return res.redirect("/");
+    }
+
     bcrypt.compare(password, user.password, function (err, result) {
+      if (err) {
+        req.flash("error", err.message);
+        return res.redirect("/");
+      }
+
       if (result) {
         let token = generateToken(user);
         res.cookie("token", token);
-        res.send("User Login Successfully");
+        return res.redirect("/shop");
       } else {
-        res.send("email and password incorrect");
+        req.flash("error", "Email and password incorrect");
+        return res.redirect("/");
       }
     });
   } catch (err) {
-    res.send(err.message);
+    req.flash("error", err.message);
+    res.redirect("/");
   }
+};
+
+module.exports.logoutUser = function (req, res) {
+  res.cookie("token", "");
+  res.redirect("/");
 };
