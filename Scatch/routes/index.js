@@ -8,10 +8,10 @@ router.get("/", function (req, res) {
   res.render("index", { error });
 });
 
-router.get("/shop", isLoggedin, async (req, res) => {
+router.get("/shop", async (req, res) => {
   try {
     const products = await productModel.find({});
-    res.render("shop", { products });
+    res.render("shop", { products, success: req.flash("success") });
   } catch (err) {
     res.status(500).send("Error fetching products");
   }

@@ -134,3 +134,7 @@
 10. isLoggedIn
 11. session Expression
 12. Flash
+13. /users/cart -> cart
+14. /admin -> admin panel
+15. owner/products -> show all products
+16. /owner/admin -> show admin panel to create products
