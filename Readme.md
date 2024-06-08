@@ -126,3 +126,7 @@
 5. development.json
 6. debug (setting evn variables)
 7. create owner and test through Postman
+
+## Part - 5:
+
+8. Signup & Login
